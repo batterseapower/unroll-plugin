@@ -1,0 +1,24 @@
+Name:           unroll-plugin
+Version:        1.0
+License:        BSD3
+License-File:   LICENSE
+Synopsis:       A plugin for GHC that performs loop unrolling according to user annotations.
+Cabal-Version:  >= 1.2
+Build-Type:     Simple
+Author:         Max Bolingbroke <batterseapower@hotmail.com>
+Maintainer:     Max Bolingbroke <batterseapower@hotmail.com>
+Homepage:       http://github.com/batterseapower/unroll-plugin
+
+Library
+    Exposed-Modules:
+        LoopUnrolling.Plugin
+    Other-Modules:
+        LoopUnrolling.Plugin.Pass,
+        LoopUnrolling.Plugin.Utilities
+    Build-Depends:
+        base >= 4,
+        syb,
+        template-haskell,
+        ghc-prim,
+        ghc >= 6.11,
+        unroll-plugin-library

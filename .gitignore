@@ -1,0 +1,15 @@
+# OS Junk
+.DS_Store
+Thumbs.db
+
+# Cabal build artifacts
+library/dist/
+plugin/dist/
+*.hi
+*.o
+
+# Test droppings
+tests/Unrolling
+tests/Unrolling.core
+tests/Peeling
+tests/Peeling.core
